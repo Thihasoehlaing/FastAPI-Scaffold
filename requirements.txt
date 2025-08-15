@@ -1,0 +1,37 @@
+# --- Core ---
+fastapi>=0.112
+uvicorn[standard]>=0.30
+pydantic[email]>=2.8.2
+pydantic-settings>=2.4
+
+# --- Database (PostgreSQL + migrations) ---
+SQLAlchemy>=2.0
+alembic>=1.13
+psycopg[binary]>=3.2
+
+# --- Uploads & files ---
+python-multipart>=0.0.9
+aiofiles>=23.2
+
+# --- Cloud storage (optional; pick what you need) ---
+boto3>=1.34            # AWS S3 / DO Spaces / Cloudflare R2 (S3-compatible)
+azure-storage-blob>=12.22
+
+# --- Auth & security (JWT, hashing) ---
+python-jose[cryptography]>=3.3
+passlib[bcrypt]>=1.7.4
+bcrypt<4.0.0
+
+# --- Testing ---
+pytest>=8.2
+pytest-asyncio>=0.23
+httpx>=0.27
+
+# --- Lint/format (optional) ---
+ruff>=0.5
+black>=24.8
+mypy>=1.10
+
+# --- Mongo (optional) ---
+pymongo>=4.8
+motor>=3.5
